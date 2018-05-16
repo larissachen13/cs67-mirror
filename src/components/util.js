@@ -5,5 +5,5 @@ export const MODULE_ACTIVE = {
   MAILBOX: 'mailbox',
 };
 
-export const MAIN_SIZE = 120;
+export const MAIN_SIZE = 220;
 export const SMALLER_SIZE = 30;

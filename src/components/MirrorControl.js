@@ -15,11 +15,14 @@ class MirrorControl extends Component {
     this.setState({
       active: activeModule,
     });
-    this.props.onModuleActiveChange(activeModule);
+    this.props.onModuleBlinkingChange(activeModule);
+    setTimeout(() => {
+      this.props.onModuleActiveChange(activeModule);
+      this.props.onModuleBlinkingChange(MODULE_ACTIVE.NONE);
+    }, 1000);
   }
 
   render() {
-    console.log(this.state.state);
     return (
       <div className="mirror-control">
         <input type="radio" // weather

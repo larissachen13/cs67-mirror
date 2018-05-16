@@ -7,8 +7,8 @@ const Calendar = () => {
   return (
     <div className="calendar">
       <div className="calendar-header">
-        <List color="#fff" size={MAIN_SIZE - 20} />
-        <div className="montserrat-normal calendar-name"> Schedule </div>
+        <List color="#fff" size={MAIN_SIZE - 100} />
+        <div className="montserrat-semibold calendar-name"> Schedule </div>
       </div>
       <div className="calendar-item">
         <div className="calendar-item-time"> 9:00am </div>

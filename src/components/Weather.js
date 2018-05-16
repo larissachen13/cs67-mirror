@@ -12,7 +12,7 @@ const Weather = () => {
             57 &#8457;
           </span>
         </div>
-        <div className="montserrat-light"> Sunny and warm </div>
+        <div className="montserrat-light weather-description"> Sunny and warm </div>
       </div>
       <div className="weather-hours">
         <div className="weather-hour">

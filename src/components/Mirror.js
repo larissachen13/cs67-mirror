@@ -14,12 +14,19 @@ class Mirror extends Component {
 
     this.state = {
       moduleActive: MODULE_ACTIVE.NONE,
+      moduleBlinking: MODULE_ACTIVE.NONE,
     };
   }
 
   onModuleActiveChange = (newModuleActive) => {
     this.setState({
       moduleActive: newModuleActive,
+    });
+  }
+
+  onModuleBlinkingChange = (newModuleBlinking) => {
+    this.setState({
+      moduleBlinking: newModuleBlinking,
     });
   }
 
@@ -42,7 +49,7 @@ class Mirror extends Component {
             <div className="mirror-header">
               <div className="mirror-header-time"> 01:10pm </div>
               <div className="mirror-header-weather">
-                <Sun color="#fff" size={SMALLER_SIZE + 40} /> <span className="mirror-header-degrees"> 67 &#8457;</span>
+                <Sun color="#fff" size={SMALLER_SIZE + 80} /> <span className="mirror-header-degrees"> 67 &#8457;</span>
               </div>
             </div>
             <div className="active-module">
@@ -51,11 +58,15 @@ class Mirror extends Component {
           </div>
           <div className="bottom-of-mirror">
             <Gesturewheel moduleActive={this.state.moduleActive} />
-            <AppBar />
+            <AppBar moduleActive={this.state.moduleActive} moduleBlinking={this.state.moduleBlinking} />
           </div>
         </div>
         <div>
-          <MirrorControl onModuleActiveChange={this.onModuleActiveChange} />
+          <MirrorControl
+            className="mirror-control"
+            onModuleActiveChange={this.onModuleActiveChange}
+            onModuleBlinkingChange={this.onModuleBlinkingChange}
+          />
         </div>
       </div>
     );
