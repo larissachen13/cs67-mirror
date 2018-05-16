@@ -122,6 +122,27 @@ body, html {
   font-size: 20px;
 }
 
+.mirror-header {
+  display: flex; 
+  flex-direction: column;
+  margin-left: 48px;
+}
+
+.mirror-header-time {
+  font-size: 56px;
+  margin-bottom: 8px;
+}
+
+.mirror-header-weather {
+  font-size: 48px;
+  display: flex; 
+  align-contents: center;
+}
+
+.mirror-header-degrees{
+  margin-left: 24px;
+}
+
 .calendar{  
   display: flex;
   flex-direction: column;

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Sun } from 'react-feather';
 import AppBar from './AppBar';
 import MirrorControl from './MirrorControl';
 import Weather from './Weather';
 import Mailbox from './Mailbox';
 import Calendar from './Calendar';
 import Gesturewheel from './Gesturewheel';
-import { MODULE_ACTIVE } from './util';
+import { MODULE_ACTIVE, SMALLER_SIZE } from './util';
 
 class Mirror extends Component {
   constructor(props) {
@@ -38,7 +39,12 @@ class Mirror extends Component {
       <div className="mirror">
         <div className="mirror-content">
           <div className="top-of-mirror">
-            <p> {this.state.moduleActive} </p>
+            <div className="mirror-header">
+              <div className="mirror-header-time"> 01:10pm </div>
+              <div className="mirror-header-weather">
+                <Sun color="#fff" size={SMALLER_SIZE + 40} /> <span className="mirror-header-degrees"> 67 &#8457;</span>
+              </div>
+            </div>
             <div className="active-module">
               {activeModule}
             </div>
