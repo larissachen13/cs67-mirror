@@ -1,0 +1,237 @@
+body, html {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #000;
+  height: 100%;
+  letter-spacing: 1px;
+}
+
+.montserrat-light {
+  font-weight: 300;
+}
+
+.montserrat-normal{
+  font-weight: 400;
+}
+
+.montserrat-semibold{
+  font-weight: 500;
+}
+
+#main {
+  height: 100%;
+}
+
+.mirror {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.mirror-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 12;
+}
+
+.top-of-mirror {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.active-module {
+  height: 300px;
+  width: 700px;
+  overflow: scroll;
+  padding-right: 90px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-hours {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-hour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 30px;
+  margin-bottom: 4px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.weather-hour-time, .weather-hour-degree {
+  font-size: 24px;
+  text-align: right;
+  flex-grow: 1;
+}
+.weather-hour-icon {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.degrees {
+  font-size: 48px;
+  margin-bottom: 60px;
+  margin-left: 48px;
+}
+
+.weather-main{
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mail-header{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.mailbox-name {
+  font-size: 32px;
+  margin-left: 12px;
+}
+
+.mail-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.mail-line-item {
+  text-align: right;
+  font-size: 20px;
+}
+
+.calendar{  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.calendar-item{
+  display: flex; 
+  justify-content: flex-end;
+}
+
+.calendar-item-time{
+  width: 100px;
+  text-align: right;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.calendar-item-text{
+  width: 200px;
+  text-align: right;
+  font-size: 20px;
+  margin-left: 24px;
+}
+
+.calendar-header{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.calendar-name {
+  font-size: 32px;
+  margin-left: 12px;
+}
+
+.smaller {
+  width: 25%;
+}
+
+.bigger {
+  width: 50%;
+}
+
+.mirror-control {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.gesture-wheel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.up-icon {
+  position: absolute; 
+  top: 0; 
+  left: 50px;
+}
+
+.down-icon {
+  position: absolute; 
+  bottom: 0; 
+  left: 50px;
+}
+
+.left-icon {
+  position: absolute; 
+  top: 50px; 
+  left: 0;
+}
+
+.right-icon {
+  position: absolute; 
+  top: 50px;
+  right: 0;
+}
+
+.gesture-message {
+  width: 90px; 
+  margin: auto auto;
+  word-wrap: break-word;
+}
+
+.gesture-wheel {
+  position: relative;
+  width: 150px; 
+  height: 150px;
+  border-radius: 75px;
+  border: 5px solid #fff;
+  display: flex;
+}
+
+.app-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 30px;
+}
+
+.app-bar-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  border: 2px solid #fff;
+  padding: 12px 0px;
+}
