@@ -47,9 +47,10 @@ class Mirror extends Component {
         <div className="mirror-content">
           <div className="top-of-mirror">
             <div className="mirror-header">
+              <div className="mirror-header-time"> Thurs., May 18 </div>
               <div className="mirror-header-time"> 01:10pm </div>
               <div className="mirror-header-weather">
-                <Sun color="#fff" size={SMALLER_SIZE + 80} /> <span className="mirror-header-degrees"> 67 &#8457;</span>
+                <Sun color="#fff" size={SMALLER_SIZE + 20} /> <span className="mirror-header-degrees"> 67 &#8457;</span>
               </div>
             </div>
             <div className="active-module">

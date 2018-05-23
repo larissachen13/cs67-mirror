@@ -37,18 +37,12 @@ body, html {
   flex-grow: 12;
 }
 
-.top-of-mirror {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 48px;
-}
-
 .active-module {
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 800px;
   overflow: scroll;
-  padding-right: 90px;
+  margin-left: 10px;
+  margin-top: 60px;
 }
 
 .weather {
@@ -64,21 +58,18 @@ body, html {
 .weather-hour {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  height: 30px;
+  justify-content: space-between;
+  height: 60px;
   margin-bottom: 4px;
   flex-grow: 1;
-  text-align: right;
-  font-size: 26px;
+  font-size: 45px;
 }
 
 .weather-hour-time, .weather-hour-degree {
-  font-size: 24px;
-  text-align: right;
+  font-size: 45px;
   flex-grow: 1;
 }
 .weather-hour-icon {
-  text-align: right;
   flex-grow: 1;
 }
 
@@ -89,7 +80,7 @@ body, html {
 }
 
 .weather-main{
-  text-align: right;
+  text-align: left;
   margin-bottom: 24px;
 }
 
@@ -100,7 +91,6 @@ body, html {
 .mail {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .mail-header{
@@ -111,7 +101,7 @@ body, html {
 }
 
 .mailbox-name {
-  font-size: 32px;
+  font-size: 40px;
   margin-left: 12px;
 }
 
@@ -124,31 +114,31 @@ body, html {
 }
 
 .mail-line-item {
-  text-align: right;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.top-of-mirror {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
 }
 
 .mirror-header {
   display: flex; 
-  flex-direction: column;
-  margin-left: 48px;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 40px;
 }
 
 .mirror-header-time {
-  font-size: 80px;
-  margin-bottom: 8px;
 }
 
 .mirror-header-weather {
-  font-size: 48px;
   display: flex; 
-  align-contents: center;
 }
 
 .mirror-header-degrees{
-  margin-left: 24px;
-  font-size: 62px;
-  margin-top: 18px;
+  margin-left: 12px;
 }
 
 .calendar{  

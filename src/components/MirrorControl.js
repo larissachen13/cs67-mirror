@@ -10,6 +10,13 @@ class MirrorControl extends Component {
     };
   }
 
+  onButtonChangeNone = (activeModule) => {
+    this.setState({
+      active: activeModule,
+    });
+    this.props.onModuleActiveChange(activeModule);
+  }
+
 
   onButtonChange = (activeModule) => {
     this.setState({
@@ -25,6 +32,10 @@ class MirrorControl extends Component {
   render() {
     return (
       <div className="mirror-control">
+        <input type="radio" // none
+          checked={this.state.active === MODULE_ACTIVE.NONE}
+          onChange={() => this.onButtonChangeNone(MODULE_ACTIVE.NONE)}
+        />
         <input type="radio" // weather
           checked={this.state.active === MODULE_ACTIVE.WEATHER}
           onChange={() => this.onButtonChange(MODULE_ACTIVE.WEATHER)}
